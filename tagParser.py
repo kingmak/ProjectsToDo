@@ -20,10 +20,10 @@ def genHtml(zeProjMap, filename):
 	htmlFile.write('<html>\n<body>\n')
 
 	for key, value in zeProjMap.iteritems():
-		htmlFile.write('\t<h2>%s</h2>\n\t<ul>\n' % key)
+		htmlFile.write('\t<h2>1. %s</h2>\n\t<ol>\n' % key)
 		for item in value:
 			htmlFile.write('\t\t<li><a href="%s" target="_blank">%s</a></li>\n' % (item, item))
-		htmlFile.write('\t</ul>\n')
+		htmlFile.write('\t</ol>\n')
 	htmlFile.close()
 
 def printMap(zeProjMap):
